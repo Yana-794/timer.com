@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="#">
+              <img
+                src="images/setting.svg"
+                alt="Setting"
+                class="sidebar__item-img"
+              />
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#">
+              <img
+                src="images/timer.svg"
+                alt="Timer"
+                class="sidebar__item-img"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="loyaut">
+        <div class="timer-container">
+          <div  id="container-timer"></div>
+        </div>
+        <div class="control-container">
+          <div class="control-time">
+            <ul class="control-time__list">
+              <li class="control-time__item control">
+                <div class="set">
+                  <div class="set__time">60</div>
+                  <div class="set__name">Set_1</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="control">
+            <div class="control-button">
+              <button class="control-time__button">
+                <img class="button-img" src="images/start.svg" alt="" />
+              </button>
+              <button class="control-time__button">
+                <img class="button-img" src="images/pause.svg" alt="" />
+              </button>
+              <button class="control-time__button">
+                <img class="button-img" src="images/reverse.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="control-animated control">
+            <label class="checkbox-group">
+              <span class="checkbox">
+                <input
+                  type="checkbox"
+                  id="animate-checkbox"
+                  class="checkbox__hidden"
+                />
+                <span class="custom__checkbox"></span>
+              </span>
+              <span class="control-label">Animate?</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
